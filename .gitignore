@@ -19,3 +19,6 @@ dist-ssr
 
 # Temporary photo drop folder (sources already copied into public/)
 _incoming-photos
+
+# Cloudflare Wrangler local state
+.wrangler
