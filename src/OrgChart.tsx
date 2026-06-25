@@ -136,7 +136,7 @@ export default function OrgChart({ query, activeDept, onSelect, expandTrigger, c
   const [dragging, setDragging] = useState(false);
 
   // Click-and-drag panning (mouse only; touch keeps native scrolling).
-  const drag = useRef({ active: false, startX: 0, startY: 0, left: 0, top: 0, moved: false });
+  const drag = useRef({ active: false, startX: 0, startY: 0, left: 0, top: 0, vWindow: false, moved: false });
 
   useEffect(() => {
     const el = wrapRef.current;
@@ -150,7 +150,18 @@ export default function OrgChart({ query, activeDept, onSelect, expandTrigger, c
     if (e.button !== 0) return;
     const el = wrapRef.current;
     if (!el) return;
-    drag.current = { active: true, startX: e.clientX, startY: e.clientY, left: el.scrollLeft, top: el.scrollTop, moved: false };
+    // The wrap scrolls horizontally; vertical overflow usually scrolls the
+    // window. Pan whichever is actually the vertical scroller.
+    const vWindow = el.scrollHeight <= el.clientHeight;
+    drag.current = {
+      active: true,
+      startX: e.clientX,
+      startY: e.clientY,
+      left: el.scrollLeft,
+      top: vWindow ? window.scrollY : el.scrollTop,
+      vWindow,
+      moved: false,
+    };
     setDragging(true);
   };
 
@@ -164,7 +175,11 @@ export default function OrgChart({ query, activeDept, onSelect, expandTrigger, c
     if (d.moved) {
       e.preventDefault();
       el.scrollLeft = d.left - dx;
-      el.scrollTop = d.top - dy;
+      if (d.vWindow) {
+        window.scrollTo(window.scrollX, d.top - dy);
+      } else {
+        el.scrollTop = d.top - dy;
+      }
     }
   };
 
