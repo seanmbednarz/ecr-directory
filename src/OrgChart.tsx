@@ -133,6 +133,10 @@ interface OrgChartProps {
 export default function OrgChart({ query, activeDept, onSelect, expandTrigger, collapseTrigger }: OrgChartProps) {
   const isFiltered = !!(query || activeDept);
   const wrapRef = useRef<HTMLDivElement>(null);
+  const [dragging, setDragging] = useState(false);
+
+  // Click-and-drag panning (mouse only; touch keeps native scrolling).
+  const drag = useRef({ active: false, startX: 0, startY: 0, left: 0, top: 0, moved: false });
 
   useEffect(() => {
     const el = wrapRef.current;
@@ -141,6 +145,44 @@ export default function OrgChart({ query, activeDept, onSelect, expandTrigger, c
     el.scrollLeft = (el.scrollWidth - el.clientWidth) / 2;
   }, []);
 
+  const onMouseDown = (e: React.MouseEvent) => {
+    // Left button only; ignore clicks on interactive elements would still work
+    if (e.button !== 0) return;
+    const el = wrapRef.current;
+    if (!el) return;
+    drag.current = { active: true, startX: e.clientX, startY: e.clientY, left: el.scrollLeft, top: el.scrollTop, moved: false };
+    setDragging(true);
+  };
+
+  const onMouseMove = (e: React.MouseEvent) => {
+    const d = drag.current;
+    const el = wrapRef.current;
+    if (!d.active || !el) return;
+    const dx = e.clientX - d.startX;
+    const dy = e.clientY - d.startY;
+    if (!d.moved && Math.abs(dx) + Math.abs(dy) > 5) d.moved = true;
+    if (d.moved) {
+      e.preventDefault();
+      el.scrollLeft = d.left - dx;
+      el.scrollTop = d.top - dy;
+    }
+  };
+
+  const endDrag = () => {
+    if (!drag.current.active) return;
+    drag.current.active = false;
+    setDragging(false);
+  };
+
+  // Swallow the click that follows a drag so it doesn't open a person card.
+  const onClickCapture = (e: React.MouseEvent) => {
+    if (drag.current.moved) {
+      e.preventDefault();
+      e.stopPropagation();
+      drag.current.moved = false;
+    }
+  };
+
   function matchesPerson(p: Person): boolean {
     const deptOk = !activeDept || p.dept === activeDept;
     const qOk = !query || (p.name + ' ' + p.title + ' ' + (p.cred || '')).toLowerCase().includes(query);
@@ -148,7 +190,15 @@ export default function OrgChart({ query, activeDept, onSelect, expandTrigger, c
   }
 
   return (
-    <div className="chart-wrap" ref={wrapRef}>
+    <div
+      className={`chart-wrap${dragging ? ' dragging' : ''}`}
+      ref={wrapRef}
+      onMouseDown={onMouseDown}
+      onMouseMove={onMouseMove}
+      onMouseUp={endDrag}
+      onMouseLeave={endDrag}
+      onClickCapture={onClickCapture}
+    >
       <div className="chart-scroll-inner">
         <ul className="org-tree">
           {roots.map(r => (
