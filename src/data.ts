@@ -107,7 +107,7 @@ export const PEOPLE: Person[] = [
     photo: '/Emily_Staples_-_Square.jpg', bio: BIO('emily-staples') },
   { id: 'jeannette-estrada', name: 'Jeannette Estrada', cred: '', title: 'Assistant Property Manager', dept: 'management', parent: 'danielle-ortiz',
     email: 'jestrada@ecrtx.com', phone: '512-505-2765', mobile: '737-318-3932', linkedin: LI('jeannette-estrada-3364b520'),
-    photo: '', bio: BIO('jeannette-estrada') },
+    photo: '/Jeannette_Estrada_-_Square.jpg', bio: BIO('jeannette-estrada') },
   { id: 'katelyn-sims', name: 'Katelyn Sims', cred: '', title: 'Property Assistant', dept: 'management', parent: 'danielle-ortiz',
     email: 'ksims@ecrtx.com', phone: '512-505-0003', mobile: '512-525-1959', linkedin: LI('simskatelyn'),
     photo: '/Katelyn_Sims_-_Square.jpg', bio: BIO('katelyn-sims') },
