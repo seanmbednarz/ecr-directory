@@ -139,7 +139,7 @@ export const PEOPLE: Person[] = [
     email: 'csanchez@ecrtx.com', phone: '512-505-2766', mobile: '512-545-4411', linkedin: '',
     photo: '/Cesar_Sanchez_-_Square.jpg', bio: BIO('cesar-sanchez') },
   { id: 'lee-jordan', name: 'Lee Jordan', cred: '', title: 'Building Engineer', dept: 'management', parent: 'mike-bartz',
-    email: 'ljordan@ecrtx.com', phone: '512-505-2785', mobile: '850-426-8497', linkedin: '',
+    email: 'ljordan@ecrtx.com', phone: '512-505-2758', mobile: '850-426-8497', linkedin: '',
     photo: '', bio: BIO('lee-jordan') },
   { id: 'bradley-augustin', name: 'Bradley Augustin', cred: '', title: 'Maintenance Engineer', dept: 'management', parent: 'mike-bartz',
     email: 'baugustin@ecrtx.com', phone: '', mobile: '', linkedin: '',
