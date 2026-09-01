@@ -115,7 +115,7 @@ export const PEOPLE: Person[] = [
     email: 'ksims@ecrtx.com', phone: '512-505-0003', mobile: '512-525-1959', linkedin: LI('simskatelyn'),
     photo: '/Katelyn_Sims_-_Square.jpg', bio: BIO('katelyn-sims') },
   { id: 'brian-velazquez', name: 'Brian Velazquez', cred: '', title: 'Research Analyst', dept: 'operations', parent: 'jennifer-schwartz',
-    email: 'bvelazquez@ecrtx.com', phone: '515-505-2769', mobile: '512-998-9396', linkedin: LI('brian-velazquez'),
+    email: 'bvelazquez@ecrtx.com', phone: '512-505-2769', mobile: '512-998-9396', linkedin: LI('brian-velazquez'),
     photo: '/Brian_Velazquez_-_Square.jpg', bio: BIO('brian-velazquez') },
 
   // --- Marketing (under Sean Bednarz) ---
