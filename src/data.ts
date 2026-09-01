@@ -61,7 +61,7 @@ export const PEOPLE: Person[] = [
   { id: 'patrick-ley', name: 'Patrick Ley', cred: 'SIOR, CCIM', title: 'Partner', dept: 'brokerage', parent: 'jason-steinberg',
     email: 'pley@ecrtx.com', phone: '512-505-0002', mobile: '512-537-9040', linkedin: LI('patrickley'),
     photo: '/Patrick_Ley_-_Square.jpg', bio: BIO('patrick-ley') },
-  { id: 'sean-couey', name: 'Sean Couey', cred: '', title: 'Senior Brokerage Advisor', dept: 'brokerage', parent: 'jason-steinberg',
+  { id: 'sean-couey', name: 'Sean Couey', cred: '', title: 'Brokerage Principal', dept: 'brokerage', parent: 'jason-steinberg',
     email: 'scouey@ecrtx.com', phone: '512-505-0027', mobile: '512-557-4754', linkedin: LI('sean-couey'),
     photo: '/Sean_Couey_-_Square.jpg', bio: BIO('sean-couey') },
   { id: 'stephen-pannes', name: 'Stephen Pannes', cred: '', title: 'Senior Brokerage Advisor', dept: 'brokerage', parent: 'jason-steinberg',
