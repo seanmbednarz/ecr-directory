@@ -50,15 +50,15 @@ export const PEOPLE: Person[] = [
   { id: 'brent-boyer', name: 'Brent Boyer', cred: '', title: 'Controller', dept: 'finance', parent: 'matt-levin',
     email: 'bboyer@ecrtx.com', phone: '512-505-0016', mobile: '512-745-3796', linkedin: LI('brent-boyer-634290a'),
     photo: '/Brent_Boyer_-_Square.jpg', bio: BIO('brent-boyer') },
+  { id: 'franziska-jackson', name: 'Franziska Jackson', cred: 'CPM, RPA, FMA, LEED AP O+M', title: 'Director of Property Management', dept: 'management', parent: 'matt-levin',
+    email: 'fjackson@ecrtx.com', phone: '512-505-0013', mobile: '512-694-3093', linkedin: LI('franziska-jackson-cpm-rpa-fma-leed-ap-34072527'),
+    photo: '/Franziska_Jackson_-_Square.jpg', bio: BIO('franziska-jackson') },
   { id: 'alli-rockett', name: 'Alli Rockett', cred: '', title: 'Property Manager', dept: 'management', parent: 'matt-levin',
     email: 'arockett@ecrtx.com', phone: '512-505-0020', mobile: '254-749-7204', linkedin: '',
     photo: '/Alli_Rockett_-_Square.jpg', bio: BIO('alli-rockett') },
   { id: 'aaron-clemons', name: 'Aaron Clemons', cred: '', title: 'Director of Construction Management', dept: 'construction', parent: 'matt-levin',
     email: 'aclemons@ecrtx.com', phone: '512-505-0831', mobile: '', linkedin: LI('aaron-clemons-310366117'),
     photo: '/Aaron_Clemons_-_Square.jpg', bio: BIO('aaron-clemons') },
-  { id: 'franziska-jackson', name: 'Franziska Jackson', cred: 'CPM, RPA, FMA, LEED AP O+M', title: 'Director of Property Management', dept: 'management', parent: 'matt-levin',
-    email: 'fjackson@ecrtx.com', phone: '512-505-0013', mobile: '512-694-3093', linkedin: LI('franziska-jackson-cpm-rpa-fma-leed-ap-34072527'),
-    photo: '/Franziska_Jackson_-_Square.jpg', bio: BIO('franziska-jackson') },
 
   // --- Brokerage (under Jason Steinberg) ---
   { id: 'patrick-ley', name: 'Patrick Ley', cred: 'SIOR, CCIM', title: 'Partner', dept: 'brokerage', parent: 'jason-steinberg',
