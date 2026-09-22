@@ -123,7 +123,7 @@ export const PEOPLE: Person[] = [
 
   { id: 'gage-berne', name: 'Gage Berne', cred: '', title: 'Research Analyst', dept: 'operations', parent: 'jennifer-schwartz',
     email: 'gberne@ecrtx.com', phone: '512-505-2755', mobile: '', linkedin: '',
-    photo: '', bio: BIO('gage-berne') },
+    photo: '/Gage_Berne_-_Square.jpg', bio: BIO('gage-berne') },
 
   // --- Marketing (under Sean Bednarz) ---
   { id: 'martin-villarreal', name: 'Martin Villarreal', cred: '', title: 'Senior Marketing Coordinator', dept: 'operations', parent: 'sean-bednarz',
@@ -171,7 +171,7 @@ export const PEOPLE: Person[] = [
     photo: '/Jose_Vazquez_-_Square.jpg', bio: BIO('jose-vazquez') },
   { id: 'brandon-meadows', name: 'Brandon Meadows', cred: '', title: 'Building Engineer', dept: 'management', parent: 'mike-bartz',
     email: 'bmeadows@ecrtx.com', phone: '512-505-0943', mobile: '', linkedin: '',
-    photo: '', bio: BIO('brandon-meadows') },
+    photo: '/Brandon_Meadows_-_Square.jpg', bio: BIO('brandon-meadows') },
   { id: 'jamie-tamayo', name: 'Jamie Tamayo', cred: '', title: 'Lead Engineer', dept: 'management', parent: 'mike-bartz',
     email: 'jtamayo@ecrtx.com', phone: '512-505-2763', mobile: '512-994-5032', linkedin: LI('jamie-tamayo-447149271'),
     photo: '/Jamie_Tamayo_-_Square.jpg', bio: BIO('jamie-tamayo') },
