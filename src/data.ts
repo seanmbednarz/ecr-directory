@@ -94,9 +94,6 @@ export const PEOPLE: Person[] = [
   { id: 'cory-camp', name: 'Cory Camp', cred: '', title: 'Brokerage Advisor', dept: 'brokerage', parent: 'jason-steinberg',
     email: 'ccamp@ecrtx.com', phone: '512-505-2761', mobile: '301-233-1124', linkedin: LI('cory-camp-893946135'),
     photo: '/Cory_Camp_-_Square.jpg', bio: BIO('cory-camp') },
-  { id: 'charles-herst', name: 'Charles Herst', cred: '', title: 'Brokerage Advisor', dept: 'brokerage', parent: 'jason-steinberg',
-    email: 'cherst@ecrtx.com', phone: '512-505-2762', mobile: '919-794-1498', linkedin: LI('charlesherst'),
-    photo: '/Charles_Herst_-_Square.jpg', bio: BIO('charles-herst') },
   { id: 'stephen-mcmillen', name: 'Stephen McMillen', cred: '', title: 'Brokerage Advisor', dept: 'brokerage', parent: 'jason-steinberg',
     email: 'smcmillen@ecrtx.com', phone: '512-505-2760', mobile: '949-922-2876', linkedin: LI('stephen-mcmillen7'),
     photo: '/Stephen_McMillen_-_Square.jpg', bio: BIO('stephen-mcmillen') },
@@ -114,11 +111,11 @@ export const PEOPLE: Person[] = [
   { id: 'katelyn-sims', name: 'Katelyn Sims', cred: '', title: 'Property Assistant', dept: 'management', parent: 'taylor-fisher',
     email: 'ksims@ecrtx.com', phone: '512-505-0003', mobile: '512-525-1959', linkedin: LI('simskatelyn'),
     photo: '/Katelyn_Sims_-_Square.jpg', bio: BIO('katelyn-sims') },
-  { id: 'brian-velazquez', name: 'Brian Velazquez', cred: '', title: 'Research Analyst', dept: 'operations', parent: 'jennifer-schwartz',
+  { id: 'brian-velazquez', name: 'Brian Velazquez', cred: '', title: 'Research Analyst', dept: 'operations', parent: 'matt-levin',
     email: 'bvelazquez@ecrtx.com', phone: '512-505-2769', mobile: '512-998-9396', linkedin: LI('brian-velazquez'),
     photo: '/Brian_Velazquez_-_Square.jpg', bio: BIO('brian-velazquez') },
 
-  { id: 'gage-berne', name: 'Gage Berne', cred: '', title: 'Research Analyst', dept: 'operations', parent: 'jennifer-schwartz',
+  { id: 'gage-berne', name: 'Gage Berne', cred: '', title: 'Research Analyst', dept: 'operations', parent: 'matt-levin',
     email: 'gberne@ecrtx.com', phone: '512-505-2755', mobile: '210-416-6691', linkedin: LI('gage-berne'),
     photo: '/Gage_Berne_-_Square.jpg', bio: BIO('gage-berne') },
 
@@ -200,7 +197,7 @@ export const PEOPLE: Person[] = [
   { id: 'wendy-smith', name: 'Wendy Smith', cred: '', title: 'Assistant Property Manager', dept: 'management', parent: 'michelle-ackermann',
     email: 'wsmith@ecrtx.com', phone: '512-505-0012', mobile: '512-635-6618', linkedin: '',
     photo: '/Wendy_Smith_-_Square.jpg', bio: BIO('wendy-smith') },
-  { id: 'jennifer-umana', name: 'Jennifer Umana', cred: '', title: 'Assistant Property Manager', dept: 'management', parent: 'michelle-ackermann',
+  { id: 'jennifer-umana', name: 'Jennifer Umana', cred: '', title: 'Assistant Property Manager', dept: 'management', parent: 'jamie-mcewin',
     email: 'jumana@ecrtx.com', phone: '512-505-0832', mobile: '580-480-5008', linkedin: LI('jennifer-u-1133862a'),
     photo: '/Jennifer_Umana_-_Square.jpg', bio: BIO('jennifer-umana') },
 
