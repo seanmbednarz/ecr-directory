@@ -41,6 +41,12 @@ export const PEOPLE: Person[] = [
   { id: 'jason-steinberg', name: 'Jason Steinberg', cred: 'SIOR', title: 'Managing Partner / Brokerage', dept: 'brokerage', parent: 'matt-levin',
     email: 'jsteinberg@ecrtx.com', phone: '512-505-0004', mobile: '512-350-9102', linkedin: LI('jason-steinberg-sior-77aa2111'),
     photo: '/Jason_Steinberg_-_Square.jpg', bio: BIO('jason-steinberg') },
+  { id: 'brian-velazquez', name: 'Brian Velazquez', cred: '', title: 'Research Analyst', dept: 'operations', parent: 'matt-levin',
+    email: 'bvelazquez@ecrtx.com', phone: '512-505-2769', mobile: '512-998-9396', linkedin: LI('brian-velazquez'),
+    photo: '/Brian_Velazquez_-_Square.jpg', bio: BIO('brian-velazquez') },
+  { id: 'gage-berne', name: 'Gage Berne', cred: '', title: 'Research Analyst', dept: 'operations', parent: 'matt-levin',
+    email: 'gberne@ecrtx.com', phone: '512-505-2755', mobile: '210-416-6691', linkedin: LI('gage-berne'),
+    photo: '/Gage_Berne_-_Square.jpg', bio: BIO('gage-berne') },
   { id: 'jennifer-schwartz', name: 'Jennifer Schwartz', cred: '', title: 'Executive Operations Manager', dept: 'operations', parent: 'matt-levin',
     email: 'jschwartz@ecrtx.com', phone: '512-505-0024', mobile: '443-752-9912', linkedin: LI('jennifer-schwartz-99029558'),
     photo: '/Jennifer_Schwartz_-_Square.jpg', bio: BIO('jennifer-schwartz') },
@@ -111,14 +117,6 @@ export const PEOPLE: Person[] = [
   { id: 'katelyn-sims', name: 'Katelyn Sims', cred: '', title: 'Property Assistant', dept: 'management', parent: 'taylor-fisher',
     email: 'ksims@ecrtx.com', phone: '512-505-0003', mobile: '512-525-1959', linkedin: LI('simskatelyn'),
     photo: '/Katelyn_Sims_-_Square.jpg', bio: BIO('katelyn-sims') },
-  { id: 'brian-velazquez', name: 'Brian Velazquez', cred: '', title: 'Research Analyst', dept: 'operations', parent: 'matt-levin',
-    email: 'bvelazquez@ecrtx.com', phone: '512-505-2769', mobile: '512-998-9396', linkedin: LI('brian-velazquez'),
-    photo: '/Brian_Velazquez_-_Square.jpg', bio: BIO('brian-velazquez') },
-
-  { id: 'gage-berne', name: 'Gage Berne', cred: '', title: 'Research Analyst', dept: 'operations', parent: 'matt-levin',
-    email: 'gberne@ecrtx.com', phone: '512-505-2755', mobile: '210-416-6691', linkedin: LI('gage-berne'),
-    photo: '/Gage_Berne_-_Square.jpg', bio: BIO('gage-berne') },
-
   // --- Marketing (under Sean Bednarz) ---
   { id: 'martin-villarreal', name: 'Martin Villarreal', cred: '', title: 'Senior Marketing Coordinator', dept: 'operations', parent: 'sean-bednarz',
     email: 'mvillarreal@ecrtx.com', phone: '512-505-0009', mobile: '956-466-3027', linkedin: LI('martinrvillarreal'),
